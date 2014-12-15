@@ -1,0 +1,65 @@
+/*
+.orderHeader
+{
+	display: block;
+	position: relative;
+	top: -35px;
+}
+#orderSummaryDIV
+{
+	display: block;
+	vertical-align: middle;
+}
+*/
+
+/*
+@media print 
+{
+	body * 
+	{
+		visibility: hidden;
+	}
+	#section_to_print, #section_to_print * 
+	{
+		visibility: visible;
+	}
+	#section_to_print 
+	{
+		position: absolute;
+		left:0;
+		top:0;
+	}
+}
+*/
+
+@media print 
+{
+	body * 
+	{
+		visibility: hidden;
+	}
+	#cboxContent * 
+	{
+		visibility: visible;
+	}
+	.orderLogo *
+	{
+		display: block;
+		visibility: visible;
+		background: url('/cassa/images/logos/CASSA_header.png') no-repeat;
+		height: 125px;
+		text-align: center;
+		position: relative;
+		top: -35px;
+	}
+	#cboxContent
+	{
+		position: absolute;
+		left:0;
+		top:0;
+	}
+	#printButton
+	{
+		display: none;
+	}
+}

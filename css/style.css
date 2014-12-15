@@ -1,0 +1,1354 @@
+/******************************************************
+
+// Name of File: style.css
+// Revision: 1.1
+// Date: 29/03/2012
+// Author: Luke S.
+// Modified: Quintin M. 29/03/2012
+// Modified: Quintin M. 07/04/2012
+// Modified: Quintin M. 09/04/2012
+// Modified: Quintin M. 15/04/2012
+// Modified: Quintin M. 16/04/2012
+
+*******************************************************
+
+******************** Start of CSS ********************/
+
+
+@font-face
+{
+	/*font-family: Cassa;
+	src: url(Cassa.ttf);*/
+}
+h1
+{
+	/*color: #000099;*/
+	color: black;
+	font-size: 25px;
+}
+h2
+{
+	/*color: #000099;*/
+	color: black;
+	font-size: 20px;
+}
+h3
+{
+	/*color: #000099;*/
+	color: black;
+	font-size: 15px;
+}
+
+
+
+
+
+
+/* THIS IT TO MAKE FOOTER ALWAYS AT BOTTOM */
+html, body, #shell
+{
+	height: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+body > #shell
+{
+	height: auto;
+	min-height: 100%;
+}
+
+
+
+
+
+
+/* DOCUMENT STRUCTURE */
+body
+{
+	/*background-color: #F1F1F1;*/
+	background: black url('/CASSA/images/background/bg.jpg') top center no-repeat;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+}
+#shell
+{
+	width: 980px;
+	background-color: white;
+}
+#container
+{
+	width: 950px;
+}
+#content
+{
+	min-height: 650px;
+}
+
+
+
+
+
+
+/* TEMPLATE OBJECTS */
+.menuBar
+{
+	/*background: none repeat scroll 0%0% rgb(0,0,0);*/
+	background-color: black;
+	display: block;
+
+	margin: 0pt auto;
+	padding: 0pt;
+
+	width: 940px;
+	height: 40px;
+	
+	/*font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;*/
+	vertical-align: baseline;
+	color: #BBBBBB;
+	font-size: 10px;
+	line-height: 14px;
+
+	position: relative;
+	z-index: 10;
+}
+	.menuBar ul
+	{
+		list-style: none outside none;
+		margin: 0pt;
+		padding: 0pt;
+
+		/*background: none repeat scroll 0%0% transparent;*/
+		border: 0pt none;
+		
+		font-size: 10pt;
+		vertical-align: baseline;
+		line-height: 14pt;
+		
+		cursor: pointer;
+	}
+		.menuBar li
+		{
+			float: left;
+			position: relative;
+			background: none repeat scroll 0%0% rgb(0,0,0);
+			border: 0pt none;
+
+			margin: 0pt auto;
+			padding: 10px;
+
+			cursor: pointer;
+		}
+			.menuBar li a
+			{
+				color: rgb(170,170,170);
+				display: block;
+				padding: 0pt 1px;
+				text-decoration: none;
+			}
+			.menuBar li a:hover
+			{
+				color: white;
+				display: block;
+				padding: 0pt 1px;
+				text-decoration: none;
+			}
+			.menuUserColor
+			{
+				color: lightgreen;
+			}
+				.children
+				{
+					box-shadow: 0px 3px 30px rgba(0,0,0,0.2);
+					display: none;
+					width: 180px;
+
+					position: absolute;
+					top: 38px;
+					left: 0pt;
+					z-index: 10;
+
+					float: left;
+
+					list-style: none outside none;
+					margin: 0pt;
+
+					background: black;
+					border: 0pt none;
+					padding: 0pt;
+					
+					font-size: 13px;
+					vertical-align: baseline;
+					color: #BBBBBB;
+					line-height: 18px;
+				}
+					.menuBar ul li .children li
+					{
+						background-color: #333333;
+						width: 180px;
+						text-align: left;
+
+						position: relative;
+						z-index: 10;
+					}
+
+
+#content
+{
+	 width: 650px;
+ 
+	 vertical-align: top; 
+	 float: left; 
+	 margin-left: 40px;
+
+	 text-align: left;
+}
+#rightPanel
+{
+	width: 180px;
+	float: right;
+
+	position: relative;
+	left: -20px;
+}
+	#loginBox
+	{
+		width: 150px;
+		/*height: 200px;*/
+
+		border: 2px solid #000099;
+		padding:10px;
+
+		vertical-align: middle;
+	}
+	#rightPanelNavigation
+	{
+		font-size: 10pt;
+		text-align: left;
+		position: relative;
+		left: 5px;
+	}
+		.rightPanelList
+		{
+			position: relative;
+			left: 0px;
+			top: 5px;
+
+		}
+		.rightPanelList li
+		{
+			list-style-type: square;
+			margin-left: 20px;
+		}
+#loginThickBox
+{
+	font-size: 9pt;
+}
+#eventThickBox
+{
+	font-size: 9pt;
+	
+	width:600px;
+	
+}
+#eventThickBox td
+{
+	font-size: 9pt;
+	
+	
+}
+
+#footer
+{
+	height: 60px;
+	margin-left: 20px;
+
+	position: relative;
+	bottom: 0;
+
+	clear: both;
+
+	font-size: 11pt;
+	text-align: left; 
+}
+
+
+
+
+
+
+/* SOLO OBJECTS */
+.backgroundA
+{
+	background: url('/CASSA/images/background/background1.jpg') center bottom no-repeat;
+}
+.blueLine940
+{
+	background-color: #014C74;
+	width: 940px;
+	height: 1px;
+	font-size: 2px;
+}
+.blueLine700
+{
+	background-color: #014C74;
+	width: 700px;
+	height: 1px;
+	font-size: 2px;
+}
+.button
+{
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+.error
+{
+	color: red;
+	font-size: 10pt;
+	line-height: 14pt;
+}
+.inLeft
+{
+	text-indent: -40px;
+}
+input
+{
+	height: 23px;
+}
+.muteInput
+{
+	background-color: #F0F0F0;
+}
+	.unmuteInput
+	{
+		background-color: white;
+	}
+p
+{
+	font-size: 12px;
+}
+.pointer
+{
+	cursor: pointer;
+}
+.print
+{
+	height: 100px;
+	line-height: 60pt;
+}
+.readonly
+{
+	background-color: #F0F0F0;
+}
+.redAstrix
+{
+	color: red;
+}
+.rowON
+{
+	background-color: lightgrey;
+}
+.rowOFF
+{
+	background-color: white;	
+}
+.emptyServer
+{
+	border: 2px solid black;
+	width: 400px;
+	height: 100px;
+	padding: 50px;
+	font-size: 13pt;
+}
+.subtitle
+{
+	font-family: 'Segoe Print';
+	font-size: 10pt;
+}
+.tableTitle
+{
+	background-color: black;
+	color:white;
+	font-weight: bold;
+	text-align:left;
+	padding:0;
+	height: 41px;
+}
+.tournamentStrip
+{
+	background: url('/cassa/images/layers/tournamentStrip.jpg') repeat-y;
+}
+
+
+
+
+
+/* HOME PAGE */
+#article
+{
+	width: 640px;
+}
+.articleTitle
+{
+	font-weight: bold;
+	line-height: 24pt;
+	font-size: 16pt;
+}
+	.articleSubTitle
+	{
+		font-weight: normal;
+		font-size: 9pt;
+		color: grey;
+
+		float: left;
+	}
+	.articleToolBox
+	{
+		float: right;
+		position: relative;
+		top: -45px;
+	}
+.articleMessage
+{
+	font-size: 12pt;
+	line-height: 18pt;
+}
+.articleImage
+{
+	max-width: 640px;
+}
+.articleTag
+{
+	font-weight: normal;
+	font-size: 9pt;
+	color: grey;
+}
+
+
+
+/* REGISTRATION PAGE */
+#registrationTable
+{
+	text-align: left;
+	line-height: 24pt;
+	font-size: 10pt;
+
+	position: relative;
+}
+
+
+
+
+
+
+/* FAQ PAGE */
+#faqDIV
+{
+	border: 1px solid black;
+	padding: 40px;
+
+	font-size: 10pt;
+}
+
+
+
+
+
+
+/* ASK A QUESTION PAGE */
+#askQuestionDIV
+{
+	padding: 40px;
+	width: 600px;
+	border: 1px solid black;
+
+	font-size: 10pt;
+}
+.messageArea
+{
+	width: 600px;
+	height: 120px;
+
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+
+	resize: none;
+	overflow: auto;
+}
+.emailDIV
+{
+	width: 600px;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-size: 12pt;
+	border: 2px solid grey;
+	padding: 20px;
+}
+
+
+
+
+
+/* Add Notice */
+#newsBox
+{
+	width: 650px;
+	border: 1px solid black;
+}
+.newsImageImage
+{
+	border: 0;
+	width: 200px;
+	height: 200px;
+}
+.addNoticeBackColor
+{
+	background-color: #F9F9F9;
+	font-family: arial;
+	font-size: 10pt;
+}
+.addNoticeTextArea
+{
+	resize: none;
+	width: 480px;
+}
+.addNoticeTitle
+{
+	font-weight: bold;
+	width: 480px;
+}
+
+
+
+
+
+/* BOARD DIV */
+.boardDIV
+{	
+	width: 930px;
+	height: 560px;
+ 	border: 5px solid #CDCDCD;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	text-align: center;
+}
+#staffDIV
+{
+	background: url('/cassa/images/layers/staffMenu.png') right bottom no-repeat;
+}
+#clientDIV
+{
+	background: url('/cassa/images/layers/clientMenu.png') right bottom no-repeat;
+}
+.boardButton
+{
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+
+	border: 0;
+}
+
+
+
+
+
+
+/* Seat Plan */
+#seatDetails
+{
+	font-size: 10pt;
+	text-align: left;
+	position: relative;
+	top: 15px;
+}
+#legend
+{
+	font-size: 10pt;
+	float: right;
+	position: relative;
+	left: -20px;
+}
+.seat
+{
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+.seat_sm
+{
+	width: 39px;
+	height: 42px;
+}
+#S1
+{
+	position: relative;
+	top: -420px;
+	left: 40px;
+}
+#S2
+{
+	position: relative;
+	top: -540px;
+	left: 700px;
+}
+#S3
+{
+	position: relative;
+	top: -560px;
+	left: 260px;
+}
+#S4
+{
+	position: relative;
+	top: -540px;
+	left: 260px;
+}
+#S5
+{
+	position: relative;
+	top: -640px;
+	left: 700px;
+}
+.seatNumber
+{
+	font-size: 8pt;
+	width: 20px;
+}
+.numWide
+{
+	font-size: 8pt;
+	width: 20px;
+	margin-left: -3px;
+}
+.numberTop
+{
+	position: relative;
+	left: 15px;
+	top: 35px;
+}
+.numberTop10
+{
+	position: relative;
+	left: 13px;
+	top: 35px;
+}
+.numberBot
+{
+	position: relative;
+	left: 14px;
+	top: -32px;
+}
+.numberBot10
+{
+	position: relative;
+	left: 12px;
+	top: -32px;
+}
+
+
+
+/* STAFF LIST [MANstaff.php] */
+.staffList
+{
+	width: 900px;
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin: 0;
+	line-height: 20pt;
+
+}
+
+
+
+/* GAME SERVER DETAILS */
+.serverDIV
+{
+	border: 2px solid black;
+	padding: 20px;
+	line-height: 20pt;
+}
+
+/* LEADER BOARD */
+.tournDIV
+{
+	border: 2px solid black;
+	padding: 20px;
+	line-height: 20pt;
+}
+
+
+
+
+
+/* PIZZA TABLE */
+.pizzaTable
+{
+	border: 1px solid black;
+	width: 680px;
+	border-collapse: collapse;
+	line-height: 22pt;
+}
+.pizzaTable caption
+{
+	font-size: 15pt;
+	font-weight: bold;
+	text-align: center;
+}
+.MANheader
+{
+	font-weight: bold;
+	background-color: black;
+	color: white;
+}
+
+
+
+/* CREATE PIZZA */
+#createPizza
+{
+	width: 290px;
+	height: 320px;
+	padding: 20px;
+	text-align: left;
+	background: url('/cassa/images/layers/pizzaQuart.png') no-repeat right bottom;
+}
+
+/* DELETE PIZZA */
+#deletePizza
+{
+	width: 400px;
+	padding: 30px;
+	border: 3px solid black;
+	text-align: left;
+
+	position: relative;
+	left: 200px;
+}
+
+/* PIZZA SUMMARY */
+#summaryPizza, #breakdownPizza
+{
+	padding: 20px;
+	text-align: left;
+}
+#breakdownPizza
+{
+	width: 760px;
+}
+.breakDownRow
+{
+	font-size: 10pt;
+}
+.pizzaOrder
+{
+	width: 650px;
+	padding: 20px;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid black;
+	line-height: 25pt;
+	text-indent: 5px;
+}
+.orderLogo
+{
+	background: url('/cassa/images/logos/CASSA_header.png') no-repeat;
+	height: 125px;
+	text-align: center;
+	position: relative;
+	top: -35px;
+}
+.orderHeader
+{
+	position: relative;
+	top: -35px;
+}
+#orderSummaryDIV
+{
+	vertical-align: middle;
+}
+
+
+
+
+
+.tournDescription
+{
+	width: 300px;
+	min-height: 100px;
+	max-height: 200px;
+	padding: 5px;
+	overflow: auto;
+	resize: none;
+	font-family: arial;
+	font-size: 12pt;
+}
+.tournDescriptionRead
+{
+	width: 300px;
+	
+	min-height: 100px;
+	max-height: 200px;
+	padding: 5px;
+	overflow: auto;
+	resize: none;
+	font-family: arial;
+	font-size: 12pt;
+
+	border: 0;
+}
+
+
+
+
+/* Event Page *//* Event Page *//* Event Page */
+/* Event Page *//* Event Page *//* Event Page */
+
+/* ONCLICK OF: 'new' EVENT */
+#addEventTable
+{
+	padding: 20px;
+}
+	.editTable
+	{
+		font-size: 11pt;
+		line-height: 25pt;
+	}
+	.editTable td
+	{
+		text-indent: 10px;
+	}
+
+
+#tableEventDetail
+{ 
+	width:700px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+#titleCell
+{
+	background-color: blue;
+	color:white;
+	font-weight: bold;
+	height: 30px;
+	width: 300px;
+	
+	padding-left: 10px;
+}
+	#headCell_left
+	{
+		background-color: black;
+		color:white;
+		font-weight: bold;
+		text-align:left;
+		width: 650px;
+		padding:0;
+	}
+	#headCell_middle
+	{
+		background-color: black;
+		color:white;
+		height: 40px;
+		width: 10px;
+	}		
+	#headCell_right
+	{
+		background-color: black;
+		color:white;
+		width: 40px;
+		text-align: right;
+		padding-right:5px;
+	}
+#detailCell
+{
+	background-color: #D0D0D0;
+	color: black;
+	height: 30px;
+	width: 350px;
+	text-align: left;
+	padding:0px 0px 0px 10px;
+}
+#pad
+{
+	background-color: #D0D0D0;
+	height: 30px;
+	width: 50px;
+	text-align: right;
+	padding:0px 0px 0px 5px;	
+}
+
+
+#eventDetail
+{
+	width: 700px;
+	border: 1px solid blue;
+	border-spacing: 0px;
+	padding:5px;
+}
+
+.headText {
+	font-weight: bold; 
+	font-size: 18px; 
+	color: #FFFFFF;
+	background-color: #000000;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border:0px;
+	width:650px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	height: 32px;
+	}
+.labelText {
+	color: #FFFFFF;
+	background-color: #3333FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	border: 0px;
+	text-align: right;
+	padding-right: 20px;
+	width:150px;
+	height: 40px;
+}
+
+.detailText {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #CCCCFF;
+	font-weight: normal;
+	font-size: 12px;
+	text-align: left;
+	border: 0px;
+	width:495px;
+	height: 40px;
+}
+.detailPad {
+	background-color: #CCCCFF;	
+	border: 0px;
+	width:5px;
+	height: 40px;		
+}
+
+.email
+{
+	border: 2px solid black;
+	width: 600px;
+	height: 800px;
+
+}
+
+
+.displayTable
+{
+	font-size: 10pt;
+	width: 600px;
+	border-collapse: collapse;
+	margin: 0;
+	line-height: 23pt;
+	text-align: left;
+}
+	.displayRow
+	{
+		font-weight: bold;
+		width: 120px;
+		line-height: 17pt;
+	}
+	.chair
+	{
+		background: url('/cassa/images/layers/chair.png') right bottom no-repeat;
+		width: 650px;
+		height: 232px;
+	}
+
+
+
+
+
+/* EVENT REGISTRATION */
+.eventSlider
+{
+	width: 880px;
+	height: 288px;
+	padding: 0;
+	margin: 0;
+}
+	/* AJAX DIV */
+	.event
+	{
+		width: 890px;
+		height: 288px;
+		padding: 0;
+		margin: 0;
+		float: left;
+		background: url('/cassa/images/layers/eventDIV1.png') top right no-repeat;
+	}
+		#ajaxDIV
+		{
+			position: relative;
+			top: 30px;
+			left: 100px;
+			width: 890px;
+			height: 288px;
+		}
+
+	/* LEFT SIDE CONTROLS */
+	.eventBAR
+	{
+		float: left;
+		position: relative;
+		top: -270px;
+	}
+		.eBAR
+		{
+			width: 250px;
+			height: 62px;
+			background: url('/cassa/images/layers/eventBAR.png') no-repeat;
+		}
+		.eBAR_ON
+		{
+			width: 250px;
+			height: 62px;
+			background: url('/cassa/images/layers/eventBAR_on.png') no-repeat;
+		}
+			.eFONT
+			{
+				font-size: 14pt;
+				font-family: "Century Gothic";
+				text-align: left;
+				position: relative;
+				top: 20px;
+				left: 15px;
+			}
+			.eSTATUS
+			{
+				float: right;
+				position: relative;
+				right: 45px;
+			}      
+ #clientTableList
+ {
+     width:700px;
+     padding:10px;
+     border-collapse: collapse;
+     
+ }
+ 
+ #clientTableList th
+ {
+        font-weight: bold; 
+	font-size: 16px; 
+	color: #FFFFFF;
+	background-color: #000000;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 32px;
+ }
+ 
+#nameCell, #emailCell, #phoneCell
+ {
+        text-align: left;
+	padding-left: 10px;
+        font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 36px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-color:black;
+        border-bottom-style: solid;
+        border-bottom-width:1px;
+        border-bottom-color: #ccccff;  
+ }
+ 
+ #clientTableData
+ {
+     width:600px;
+     padding: 10px;
+     border-collapse: collapse;
+     
+ }
+
+ #clientTableData th
+ {
+        font-weight: bold; 
+	font-size: 16px; 
+	color: #FFFFFF;
+	background-color: #000000;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 32px;
+ }
+ 
+ #td1
+ {
+        width: 200px;
+        font-weight: bold; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 20px;
+	height: 28px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ #td2
+ {
+        width: 400px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: left;
+	padding-left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 28px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ } #td3
+ {
+        width: 600px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: right;
+	padding-right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 28px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ 
+ #clientEventTableData
+ {
+     width:700px;
+     padding:10;
+     border-collapse: collapse;
+     
+ }
+
+ #clientEventTableData th
+ {
+        font-weight: bold; 
+	font-size: 16px; 
+	color: #FFFFFF;
+	background-color: #000000;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 32px;
+ }
+ 
+ 
+ #td11
+ {
+        width: 150px;
+        font-weight: bold; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 20px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ #td12
+ {
+        width: 150px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: left;
+	padding-left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ #td13
+ {
+        width: 200px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: right;
+	padding-right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ 
+ #td14
+ {
+        width: 200px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ 
+ #clientPizzaTableData
+ {
+     width:700px;
+     padding:10;
+     border-collapse: collapse;
+     
+ }
+ 
+ 
+ #clientPizzaTableData th
+ {
+        font-weight: bold; 
+	font-size: 16px; 
+	color: #ffffff;
+	background-color: #000000 ;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 32px;
+ }
+ 
+ #td111
+ {
+        width: 300px;
+        font-weight: bold; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: left;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 20px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ #td122
+ {
+        width: 100px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: center;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ #td133
+ {
+        width: 100px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: center;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ 
+ #td144
+ {
+        width: 100px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: center;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
+ #td155
+ {
+        width: 100px;
+        font-weight: normal; 
+	font-size: 12px; 
+	color: #000000;
+	background-color: #ffffff;
+	text-align: right;
+	padding-right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-spacing: 10px;
+	height: 20px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: solid;
+        border-width:1px;
+        border-color: #ccccff;
+ }
